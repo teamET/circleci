@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/sakakendo0321/circleci/issues"
   },
-  "homepage": "https://github.com/sakakendo0321/circleci#readme"
+  "homepage": "https://github.com/sakakendo0321/circleci#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
