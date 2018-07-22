@@ -1,6 +1,8 @@
 
 var request=require('supertest');
 var app=require('../index').app;
+console.log('start app');
+
 /*
    //test without index.js
 const express=require('express');
@@ -13,6 +15,7 @@ app.get('/',(req,res)=>{
 
 
 request(app).get('/').expect(200).end((err,res)=>{
+	console.log('get route');
 	if(err) throw err;
 });
 

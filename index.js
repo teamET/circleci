@@ -5,9 +5,11 @@ app.get('/',(req,res)=>{
 	res.status(200).send('hello world');
 });
 
-var server=app.listen(3000,()=>{
-	console.log('app started',server.address());
-
-});
-
 module.exports.app=app;
+
+if (!module.parent){
+	var server=app.listen(3000,()=>{
+		console.log('app started',server.address());
+	});
+}
+
