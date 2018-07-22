@@ -16,9 +16,11 @@ request(app).get('/').expect(200).end((err,res)=>{
 	if(err) throw err;
 });
 
+/*
 request(app).get('/unknown').expect(200).end((err,res)=>{
 	if(err) throw err;
 });
+*/
 
 /*
 describe('GET',()=>{
