@@ -4,7 +4,8 @@
   "description": "test for circleci",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js",
+	"test":"node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/sakakendo0321/circleci#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "supertest": "^3.1.0"
   }
 }
